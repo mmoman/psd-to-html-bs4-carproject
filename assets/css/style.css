@@ -1,0 +1,53 @@
+/***Basic Setting***/
+@font-face {
+    font-family: Proxima Nova Rg;
+    src: url(../fonts/proxima_nova_regular.ttf);
+}
+@font-face {
+    font-family: Pristina;
+    src: url(../fonts/pristina.ttf);
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+p{
+    font-family: Proxima Nova Rg, sans-serif;
+}
+
+/***Header Section***/
+.header-section{
+    background-image: url("../images/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.logo-img{
+    max-width: 75%;
+}
+.nav-item{
+    position: relative;
+    padding: 0 25px;
+}
+.nav-item::after{
+    content: "/";
+    position: absolute;
+    color: #f6f9fa;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(20%);
+}
+.nav-item:last-child::after{
+    display: none;
+}
+.nav-link{
+    text-transform: uppercase;
+    color: #f6f9fa;
+}
+.navbar .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=33B5E5');
+}
+
